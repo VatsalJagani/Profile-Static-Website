@@ -129,36 +129,43 @@ html,body {
 .instagram {
     background: linear-gradient(-90deg, #ee7752, #e73c7e);
     box-shadow: 4px 5px 20px 0px #ee7752;
+    transition: 0.3s ease
 }
 
 .telegram {
     background: linear-gradient(-90deg, #00C7DE, #0393D5);
     box-shadow: 4px 5px 20px 0px #00C7DE;
+    transition: 0.3s ease
 }
 
 .twitter {
     background: linear-gradient(-90deg, #00C7DE, #0393D5);
     box-shadow: 4px 5px 20px 0px #00C7DE;
+    transition: 0.3s ease
 }
 
 .linkedin {
     background: linear-gradient(90deg, #3498db, #0052D4);
     box-shadow: 4px 5px 20px 0px #3498db;
+    transition: 0.3s ease;
 }
 
 .github {
     background: linear-gradient(-90deg, #232526, #414345);
     box-shadow: 4px 5px 20px 0px #232526;
+    transition: 0.3s ease
 }
 
 .youtube {
     background: linear-gradient(90deg, #ED213A, #93291E);
     box-shadow: 4px 5px 20px 0px #ED213A;
+    transition: 0.3s ease
 }
 
 .resume {
     background: linear-gradient(90deg, rgb(26, 109, 255) -0.42%, rgb(200, 34, 255) 100.42%);
     box-shadow: 4px 5px 20px 0px rgb(26, 109, 255);
+    transition: 0.3s ease
 }
 
 /* .skills {
@@ -180,6 +187,11 @@ html,body {
     transition: all 0.2s ease;
     box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.43);
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.badge:hover{
+    transform: scale(1.075);
 }
 
 /* .badge:hover {
