@@ -34,7 +34,7 @@ html,body {
 .content {
     background: white;
     border-radius: 15px;
-    width: 80%;
+    /* width: 80%; */
     height: calc(100% - 60px);
     margin: 30px auto;
     display: flex;
@@ -42,6 +42,7 @@ html,body {
     align-items: center;
     justify-content: center;
     font-size: 1rem;
+    padding: 0 30px;
 }
 
 .content__contact-info {
@@ -81,6 +82,10 @@ html,body {
     align-items: center;
     justify-content: center;
     padding-bottom: 10%;
+}
+
+.desc{
+    margin-bottom: 15px;
 }
 
 .social__card {
@@ -156,21 +161,19 @@ html,body {
     box-shadow: 4px 5px 20px 0px rgb(26, 109, 255);
 }
 
-.skills {
-    width: 100%;
+/* .skills {
     display: flex;
-}
+} */
 
 .skills a {
-    display: block;
-    width: 100%;
+    display: inline-block;
 }
 
 .badge {
-    margin: 0.5em auto;
+    margin: 20px 10px 0;
     width: 7rem;
     height: 2.5rem;
-    border-radius: 10%;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,31 +182,31 @@ html,body {
     cursor: pointer;
 }
 
-.badge:hover {
+/* .badge:hover {
     margin-top: 1rem;
-}
+} */
 
 
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
 
-    html, body {
+    /* html, body {
         height: 100%;
         overflow-y: hidden;
-    }
+    } */
 
     .content {
         display: flex;
         flex-direction: row;
         margin: auto;
         height: 80%;
-        margin: 5% auto;
+        margin: 100px;
     }
 
     .content__contact-info {
         width: 50%;
-        padding: 10% 5%;
+        padding: 60px 50px;
     }
 
     .content__contact--det {
@@ -213,3 +216,53 @@ html,body {
 
 }  
 
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    .badge {
+        margin: 20px 5px 0;
+        width: 6rem;
+    }
+
+    .content__contact-info{
+        padding: 60px 0;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .badge {
+        margin: 20px 5px 0;
+    }
+
+    .content__contact-info {
+        padding: 30px 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+
+    .content{
+        margin: 30px;
+        padding: 0 15px;
+    }
+
+    .content__contact-info{
+        padding: 5% 0;
+    }
+
+    .content__contact--user-name {
+        padding-top: 0.5em;
+    }
+
+    .content__contact--det{
+        padding-bottom: 5%;
+    }
+
+    .badge {
+        margin: 20px 7px 0;
+        width: 6rem;
+    }
+
+}
