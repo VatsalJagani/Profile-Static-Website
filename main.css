@@ -168,10 +168,6 @@ html,body {
     transition: 0.3s ease
 }
 
-/* .skills {
-    display: flex;
-} */
-
 .skills,.skills2{
     text-align: center;
 }
@@ -179,9 +175,9 @@ html,body {
 .skills a, .skills2 a {
     display: inline-block;
 }
-
+`
 .badge {
-    margin: 20px 10px 0;
+    margin: 20px 15px 0;
     width: 7rem;
     height: 2.5rem;
     border-radius: 10px;
@@ -197,10 +193,6 @@ html,body {
     transform: scale(1.075);
 }
 
-/* .badge:hover {
-    margin-top: 1rem;
-} */
-
 .badge2 {
     width: 100px;
     height: 100px;
@@ -211,11 +203,6 @@ html,body {
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-
-    /* html, body {
-        height: 100%;
-        overflow-y: hidden;
-    } */
 
     .content {
         display: flex;
