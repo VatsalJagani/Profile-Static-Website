@@ -34,7 +34,7 @@ html,body {
 .content {
     background: white;
     border-radius: 15px;
-    width: 80%;
+    /* width: 80%; */
     height: calc(100% - 60px);
     margin: 30px auto;
     display: flex;
@@ -42,6 +42,7 @@ html,body {
     align-items: center;
     justify-content: center;
     font-size: 1rem;
+    padding: 0 30px;
 }
 
 .content__contact-info {
@@ -81,6 +82,10 @@ html,body {
     align-items: center;
     justify-content: center;
     padding-bottom: 10%;
+}
+
+.desc{
+    margin-bottom: 15px;
 }
 
 .social__card {
@@ -124,86 +129,92 @@ html,body {
 .instagram {
     background: linear-gradient(-90deg, #ee7752, #e73c7e);
     box-shadow: 4px 5px 20px 0px #ee7752;
+    transition: 0.3s ease
 }
 
 .telegram {
     background: linear-gradient(-90deg, #00C7DE, #0393D5);
     box-shadow: 4px 5px 20px 0px #00C7DE;
+    transition: 0.3s ease
 }
 
 .twitter {
     background: linear-gradient(-90deg, #00C7DE, #0393D5);
     box-shadow: 4px 5px 20px 0px #00C7DE;
+    transition: 0.3s ease
 }
 
 .linkedin {
     background: linear-gradient(90deg, #3498db, #0052D4);
     box-shadow: 4px 5px 20px 0px #3498db;
+    transition: 0.3s ease;
 }
 
 .github {
     background: linear-gradient(-90deg, #232526, #414345);
     box-shadow: 4px 5px 20px 0px #232526;
+    transition: 0.3s ease
 }
 
 .youtube {
     background: linear-gradient(90deg, #ED213A, #93291E);
     box-shadow: 4px 5px 20px 0px #ED213A;
+    transition: 0.3s ease
 }
 
 .resume {
     background: linear-gradient(90deg, rgb(26, 109, 255) -0.42%, rgb(200, 34, 255) 100.42%);
     box-shadow: 4px 5px 20px 0px rgb(26, 109, 255);
+    transition: 0.3s ease
 }
 
-.skills {
-    width: 100%;
-    display: flex;
+.skills,.skills2{
+    text-align: center;
 }
 
-.skills a {
-    display: block;
-    width: 100%;
+.skills a, .skills2 a {
+    display: inline-block;
 }
-
+`
 .badge {
-    margin: 0.5em auto;
+    margin: 20px 15px 0;
     width: 7rem;
     height: 2.5rem;
-    border-radius: 10%;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s ease;
     box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.43);
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.badge:hover {
-    margin-top: 1rem;
+.badge:hover, .badge2:hover{
+    transform: scale(1.075);
 }
 
+.badge2 {
+    width: 100px;
+    height: 100px;
+    margin: 20px 10px 0;
+    transition: 0.3s ease;
+}
 
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-
-    html, body {
-        height: 100%;
-        overflow-y: hidden;
-    }
 
     .content {
         display: flex;
         flex-direction: row;
         margin: auto;
         height: 80%;
-        margin: 5% auto;
+        margin: 100px;
     }
 
     .content__contact-info {
         width: 50%;
-        padding: 10% 5%;
+        padding: 60px 50px;
     }
 
     .content__contact--det {
@@ -213,3 +224,68 @@ html,body {
 
 }  
 
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    .badge {
+        margin: 20px 5px 0;
+        width: 6rem;
+    }
+
+    .content__contact-info{
+        padding: 60px 0;
+    }
+
+    .badge2{
+        margin: 20px 8px 0;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .badge {
+        margin: 20px 5px 0;
+    }
+
+    .content__contact-info {
+        padding: 30px 0px;
+    }
+    .badge2{
+        width: 70px;
+        height: 70px;
+        margin: 20px 5px 0;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+
+    .content{
+        margin: 30px;
+        padding: 0 15px;
+    }
+
+    .content__contact-info{
+        padding: 5% 0;
+    }
+
+    .content__contact--user-name {
+        padding-top: 0.5em;
+    }
+
+    .content__contact--det{
+        padding-bottom: 5%;
+    }
+
+    .badge {
+        margin: 20px 7px 0;
+        width: 6rem;
+    }
+
+    .badge2{
+            width: 70px;
+            height: 70px;
+            margin: 20px 1px 0;
+    }
+
+}
