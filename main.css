@@ -75,6 +75,14 @@ html,body {
     font-weight: bold;
 }
 
+.content__contact--tagline {
+    padding-top: 0.3em;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #555;
+    text-align: center;
+}
+
 .content__contact--det {
     width: 100%;
     display: flex;
@@ -126,22 +134,32 @@ html,body {
     cursor: pointer;
 }
 
-.instagram {
-    background: linear-gradient(-90deg, #ee7752, #e73c7e);
-    box-shadow: 4px 5px 20px 0px #ee7752;
+.x-twitter {
+    background: linear-gradient(-90deg, #333, #000);
+    box-shadow: 4px 5px 20px 0px #333;
     transition: 0.3s ease
 }
 
-.telegram {
-    background: linear-gradient(-90deg, #00C7DE, #0393D5);
-    box-shadow: 4px 5px 20px 0px #00C7DE;
+.x-twitter i {
+    font-size: 1.5rem;
+    margin-left: 0.3rem;
+}
+
+.splunk-community {
+    background: linear-gradient(-90deg, #65A637, #4A8C2A);
+    box-shadow: 4px 5px 20px 0px #65A637;
     transition: 0.3s ease
 }
 
-.twitter {
-    background: linear-gradient(-90deg, #00C7DE, #0393D5);
-    box-shadow: 4px 5px 20px 0px #00C7DE;
+.credly {
+    background: linear-gradient(-90deg, #FF6B00, #E05500);
+    box-shadow: 4px 5px 20px 0px #FF6B00;
     transition: 0.3s ease
+}
+
+.credly i {
+    font-size: 1.5rem;
+    margin-left: 0.3rem;
 }
 
 .linkedin {
